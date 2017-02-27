@@ -1,0 +1,38 @@
+body {
+  margin: 20px;
+}
+#create {
+  width: 50vw;
+  max-width: 600px;
+}
+#card_image {
+  margin: 25px;
+  width: 40vw;
+}
+#card_container {
+  border: 2px solid black;
+  width: 60vw;
+  min-height: 50vh;
+  margin-top: 5px;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 120%;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+footer {
+  margin: 15px 0 15px 0;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  #card_container {
+    width: 30vw;
+    min-height: 80vh;
+    font-size: 2vw;
+  }
+  #card_image {
+    margin: 25px;
+    width: 20vw;
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>Open Ecard Generator</title>
+    <meta content="">
+    <link rel="stylesheet" type="text/css" href="https://dohliam.github.io/dropin-minimal-css/vendor/picnic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="card.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/receive.js" type="text/javascript"></script>
+  </head>
+  <body onload="quick_api()">
+    <h1>Hi<span id="recipient">, </span><span id="sender">someone</span> sent you a card!</h1>
+    <div id="card_container">
+      <div id="view_card">
+        <center>
+          <img id="card_image"/><br>
+          <p id="message_preview">&nbsp;</p>
+        </center>
+      </div>
+    </div>
+    <footer>
+      Designed with <a href="https://github.com/dohliam/ecards">Open Ecard Generator</a>.
+    </footer>
+  </body>
+</html>
