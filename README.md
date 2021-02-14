@@ -43,6 +43,8 @@ The card generation and retrieval process is done entirely locally, so none of t
 
 * Default card background patterns from [transparent-textures](https://github.com/mike-hearn/transparent-textures) by @mike-hearn
 * Default card images from the [elegant-circles](https://github.com/dohliam/elegant-circles) repo, original artwork by [Elegant Themes](http://www.elegantthemes.com/)
+* Logo based on [Wedding Invitation](https://thenounproject.com/term/wedding-invitation/3327167/) by [The Icon Z](https://thenounproject.com/theiconz) from the Noun Project
+
 
 ## License
 
