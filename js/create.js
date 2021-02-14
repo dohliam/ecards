@@ -87,6 +87,14 @@ function show_preview() {
   card_url.innerHTML = '<a href="' + receive + query_string + '" target="_blank">Shareable link to your card</a>' + recipient;
 }
 
+function import_card() {
+  base_url = location.href;
+  url = window.import_url.value;
+  code = url.replace(/^.*\/receive.html/, "/receive.html");
+  target = base_url.replace(/\/$/, "") + code;
+  window.location = target;
+}
+
 function toggle_preview() {
   preview = document.getElementById("preview_container");
   if (preview.style.display == "") {

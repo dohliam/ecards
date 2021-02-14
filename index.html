@@ -45,7 +45,43 @@
       <div id="select_bg">&nbsp;</div>
     </div>
 
-    <button type="button" onclick="toggle_preview()">Toggle preview</button>
+    <button type="button" onclick="toggle_preview()">Toggle preview</button> <label for="modal_1" class="button success">Import</label> <label for="modal_2" class="button warning">Help</label>
+
+    <div class="modal">
+      <input id="modal_1" type="checkbox">
+      <label for="modal_1" class="overlay"></label>
+      <article>
+        <header>
+          <h3>Import</h3>
+          <label for="modal_1" class="close">×</label>
+        </header>
+        <section class="content">
+          <p>Have a card URL or code from another Open Ecard Generator instance? You can import it and view it here! Just paste the original URL in the box below and press the button to view your card.</p>
+
+          <input type="text" id="import_url" size="25" placeholder="URL or code"><br><button onkeyup="import_card()">View card!</button>
+        </section>
+      </article>
+    </div>
+
+    <div class="modal">
+      <input id="modal_2" type="checkbox">
+      <label for="modal_2" class="overlay"></label>
+      <article>
+        <header>
+          <h3>Help</h3>
+          <label for="modal_2" class="close">×</label>
+        </header>
+        <section class="content">
+          <p>The default ("create") page provides a simple interface to design your electronic greeting card. The message text, card image, background colour and pattern, and sender and receiver names can all be customized. Press the "Preview" button to see what your ecard will look like.</p>
+
+          <p>While you are designing your card, a link will appear to the final card. You can share this link (which goes to the "receive" page) with anyone you would like to share the card with.</p>
+
+          <p>All of your customizations are encoded in the url, so the card contents will not expire or change as long as the site is up (and even if the site goes down, you can still retrieve your card by downloading the generator and opening the link locally with the same parameters.)</p>
+
+          <p>The card generation and retrieval process is done entirely locally, so none of the card contents is ever stored anywhere on any server.</p>
+        </section>
+      </article>
+    </div>
 
     <div id="card_url">&nbsp;</div>
 
