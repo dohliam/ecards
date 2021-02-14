@@ -11,6 +11,7 @@ This is a working prototype for a purely client-side javascript ecard generator.
 * Can be run locally or offline
 * Use your own images, colours, and text
 * Unicode-friendly
+* Import card links from other instances
 * No need for email -- send link by instant message, text or however you want
 
 ## Demo
@@ -19,13 +20,13 @@ This is a working prototype for a purely client-side javascript ecard generator.
 
 ## Usage
 
-The default ("create") page provides a simple interface to design your electronic greeting card. The message text, card image, background colour and pattern, and sender and receiver names can all be customized. Press the "Preview" button to see what your ecard will look like.
+The default ("create") page provides a simple interface to design your electronic greeting card. The message text, card image, background colour and pattern, and sender and receiver names can all be customized. Your card will appear in an automatically-updating preview at the bottom of the screen as you begin to edit it. Press the "Toggle preview" button to turn off the preview feature.
 
-While you are designing your card, a link will appear to the final card. You can share this link (which goes to the "receive" page) with anyone you would like to share the card with.
+While you are designing your card, a link will appear to the final card. You can share this link (which goes to the "receive" page) with anyone you would like to send the card to.
 
-All of your customizations are encoded in the url, so the card contents will not expire or change as long as the site is up (and even if the site goes down, you can still retrieve your card by downloading the generator and opening the link locally with the same parameters.)
+All of your customizations are encoded in the url, so the card contents will not expire or change as long as the site is up (and even if the site goes down, you can still retrieve your card by downloading the generator and importing the link.)
 
-The card generation and retrieval process is done entirely locally, so none of the card contents is ever stored anywhere on any server.
+The card generation and retrieval process is done entirely locally on your device, so none of the card contents is ever stored anywhere on any server.
 
 ## To do
 
@@ -34,7 +35,7 @@ The card generation and retrieval process is done entirely locally, so none of t
 * Auto adjust text size for long messages
 * Show preview in modal window
 * Share button with preformatted link
-* Import/export card templates
+* ~~Import/export card templates~~
 * Config file to store default icon/pattern locations, sender name etc
 * Interface translation
 * Audio?
